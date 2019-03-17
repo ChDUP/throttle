@@ -1,0 +1,56 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  height: 5rem;
+}
+
+.jumbotron {
+  background-image: url("/img/home-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  padding-top: 7rem;
+}
+
+// .jumbotron:before {
+//   content:url("/img/home-bg.jpg");
+//   position:absolute;
+//   top:0;
+//   left:0;
+//   opacity:.5;
+// }
+
+.home-title {
+  text-shadow: black 0.05em 0.1em 0.05em;
+}
+
+.home-title h1{
+  font-size: 4rem;
+}
+
+.home-title h2{
+  font-size: 3rem;
+}
+
+.searchbar {
+  display:block;
+  width: 100%;
+  margin-top: 8rem;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-search {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
