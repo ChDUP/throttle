@@ -14,7 +14,7 @@
                             <input type="text" class="form-control-plaintext bg-white p-2 rounded h3" placeholder="Code postal ou ville">
                         </div>
                         <div class="col-xs-12 col-sm-3">
-                                <button type="button" class="btn btn-primary btn-block p-2 font-weight-bold btn-search">Rechercher</button>
+                                <button type="button" class="btn btn-search btn-block p-2 font-weight-bold">Rechercher</button>
                         </div>
 
                     </div>

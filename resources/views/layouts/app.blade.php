@@ -40,8 +40,8 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <li class="nav-item mt-3 mr-3">
-                                <a class="nav-link h4" href="{{ route('login') }}">{{ __('nav.login') }}</a>
+                            <li class="nav-item mt-3 mr-5">
+                                <a class="nav-link h4" href="{{ route('login') }}">{{ __('nav.login') }} <i class="fa fa-user-circle"></i></a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">

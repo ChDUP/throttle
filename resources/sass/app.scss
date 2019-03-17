@@ -8,6 +8,8 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
 .navbar {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -53,4 +55,13 @@
 .btn-search {
   font-size: 1.6rem;
   margin-bottom: 0;
+  color: #fff;
+  background: #dca134 linear-gradient(180deg, #e1b351, #dca134) repeat-x;
+  border-color: #dca134;
+}
+
+.btn-search:hover {
+  color: #fff;
+  background: #dba030 linear-gradient(180deg, #daaa43, #dba030) repeat-x;
+  border-color: #dba030;
 }
