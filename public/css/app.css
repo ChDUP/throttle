@@ -13793,17 +13793,27 @@ a.text-dark:focus {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-.btn-search {
+.btn-valid {
   font-size: 1.6rem;
   margin-bottom: 0;
+  font-weight: bold;
+  text-transform: capitalize;
   color: #fff;
-  background: #dca134 linear-gradient(180deg, #e1b351, #dca134) repeat-x;
+  background: #dca134 linear-gradient(180deg, #eed025, #f3b93c) repeat-x;
   border-color: #dca134;
 }
 
-.btn-search:hover {
+.btn-valid:hover {
   color: #fff;
   background: #dba030 linear-gradient(180deg, #daaa43, #dba030) repeat-x;
   border-color: #dba030;
+}
+
+.card-header {
+  text-transform: uppercase;
+}
+
+label {
+  text-transform: capitalize;
 }
 

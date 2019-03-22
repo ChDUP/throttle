@@ -14,7 +14,7 @@
                             <input type="text" class="form-control-plaintext bg-white p-2 rounded h3" placeholder="{{ __('home.search-placeholder') }}">
                         </div>
                         <div class="col-xs-12 col-sm-3">
-                                <button type="button" class="btn btn-search btn-block p-2 font-weight-bold">{{ __('home.search-button') }}</button>
+                                <button type="button" class="btn btn-valid btn-block p-2">{{ __('home.search-button') }}</button>
                         </div>
 
                     </div>
