@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class SetupsController extends Controller
 {
+    public function __construct() {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -25,7 +29,7 @@ class SetupsController extends Controller
      */
     public function create()
     {
-        //
+        return view('setups.create');
     }
 
     /**
@@ -36,7 +40,11 @@ class SetupsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $attributes = $this->validateSetup();
+        $attributes['owner_id'] = auth()->id();
+        $setup = Setup::create($attributes);
+
+        return redirect('/');
     }
 
     /**
@@ -82,5 +90,20 @@ class SetupsController extends Controller
     public function destroy(Setup $setup)
     {
         //
+    }
+
+    protected function validateSetup() {
+        return request()->validate([
+            'name' => ['required', 'min:3'],
+            'size' => ['required', 'integer'],
+            'frame' => ['required', 'min:3'],
+            'flight_controller' => ['required', 'min:3'],
+            'power_board' => ['min:1'],
+            'esc' => ['min:1'],
+            'camera' => ['min:1'],
+            'vtx' => ['min:1'],
+            'rx' => ['min:1'],
+            'description' => ['min:1']
+        ]);
     }
 }
