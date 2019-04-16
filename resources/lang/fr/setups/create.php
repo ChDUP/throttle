@@ -8,6 +8,7 @@ return [
     "flight_controller" => "Flight Controller",
     "power_board" => "Power Distribution Board",
     "esc" => "ESC",
+    "motors" => "Moteurs",
     "camera" => "Camera",
     "vtx" => "VTx",
     "rx" => "Rx",

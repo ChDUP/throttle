@@ -22,6 +22,7 @@ class CreateSetupsTable extends Migration
             $table->string('flight_controller');
             $table->string('power_board');
             $table->string('ESC');
+            $table->string('motors');
             $table->string('camera');
             $table->string('VTX');
             $table->string('RX');

@@ -29,6 +29,10 @@
             <input type="text" name="esc" class="form-control {{ $errors->has('esc') ? 'is-danger' : '' }}" value="{{old ('esc') }}">
         </div>
         <div class="form-group">
+            <label for="description" class="label">{{ __('setups/create.motors') }}</label>
+            <input type="text" name="motors" class="form-control {{ $errors->has('motors') ? 'is-danger' : '' }}" value="{{old ('motors') }}">
+        </div>
+        <div class="form-group">
             <label for="description" class="label">{{ __('setups/create.camera') }}</label>
             <input type="text" name="camera" class="form-control {{ $errors->has('camera') ? 'is-danger' : '' }}" value="{{old ('camera') }}">
         </div>
