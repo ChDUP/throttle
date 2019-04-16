@@ -55,10 +55,13 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/account">
+                                         {{ __('nav.account') }}
+                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('nav.logout') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -73,7 +76,13 @@
         </nav>
 
         <main>
-            @yield('content')
+            @if (!Request::is('/'))
+            <div class="container">
+            @endif
+                @yield('content')
+            @if (!Request::is('/'))
+            </div>
+            @endif
         </main>
     </div>
 </body>

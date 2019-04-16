@@ -44,7 +44,7 @@ class SetupsController extends Controller
         $attributes['owner_id'] = auth()->id();
         $setup = Setup::create($attributes);
 
-        return redirect('/');
+        return redirect('/account');
     }
 
     /**
@@ -55,7 +55,8 @@ class SetupsController extends Controller
      */
     public function show(Setup $setup)
     {
-        //
+        $setup->owner = $setup->owner->name;
+        return view('setups.show', compact('setup'));
     }
 
     /**
@@ -100,10 +101,15 @@ class SetupsController extends Controller
             'flight_controller' => ['required', 'min:3'],
             'power_board' => ['min:1'],
             'esc' => ['min:1'],
+            'motors' => ['min:1'],
             'camera' => ['min:1'],
             'vtx' => ['min:1'],
             'rx' => ['min:1'],
             'description' => ['min:1']
         ]);
+    }
+
+    public function owner() {
+        return $this->belongsTo(User::class);
     }
 }
