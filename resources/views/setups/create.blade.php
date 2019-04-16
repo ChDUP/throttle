@@ -5,47 +5,47 @@
     <form action="/setups" method="POST">
         {{ csrf_field() }}
         <div class="form-group">
-            <label for="name" class="label">{{ __('setups/create.name') }}</label>
+            <label for="name" class="label">{{ __('setups/parts.name') }}</label>
             <input type="text" name="name" class="form-control {{ $errors->has('name') ? 'is-danger' : '' }}" value="{{ old('name') }}" required>
         </div>
         <div class="form-group">
-            <label for="description" class="label">{{ __('setups/create.size') }}</label>
+            <label for="description" class="label">{{ __('setups/parts.size') }}</label>
             <input type="text" name="size" class="form-control {{ $errors->has('size') ? 'is-danger' : '' }}" value="{{old ('size') }}" required>
         </div>
         <div class="form-group">
-            <label for="frame" class="label">{{ __('setups/create.frame') }}</label>
+            <label for="frame" class="label">{{ __('setups/parts.frame') }}</label>
             <input type="text" name="frame" class="form-control {{ $errors->has('size') ? 'is-danger' : '' }}" value="{{old ('frame') }}" required>
         </div>
         <div class="form-group">
-            <label for="description" class="label">{{ __('setups/create.flight_controller') }}</label>
+            <label for="description" class="label">{{ __('setups/parts.flight_controller') }}</label>
             <input type="text" name="flight_controller" class="form-control {{ $errors->has('flight_controller') ? 'is-danger' : '' }}" value="{{old ('flight_controller') }}" required>
         </div>
         <div class="form-group">
-            <label for="description" class="label">{{ __('setups/create.power_board') }}</label>
+            <label for="description" class="label">{{ __('setups/parts.power_board') }}</label>
             <input type="text" name="power_board" class="form-control {{ $errors->has('power_board') ? 'is-danger' : '' }}" value="{{old ('power_board') }}">
         </div>
         <div class="form-group">
-            <label for="description" class="label">{{ __('setups/create.esc') }}</label>
+            <label for="description" class="label">{{ __('setups/parts.esc') }}</label>
             <input type="text" name="esc" class="form-control {{ $errors->has('esc') ? 'is-danger' : '' }}" value="{{old ('esc') }}">
         </div>
         <div class="form-group">
-            <label for="description" class="label">{{ __('setups/create.motors') }}</label>
+            <label for="description" class="label">{{ __('setups/parts.motors') }}</label>
             <input type="text" name="motors" class="form-control {{ $errors->has('motors') ? 'is-danger' : '' }}" value="{{old ('motors') }}">
         </div>
         <div class="form-group">
-            <label for="description" class="label">{{ __('setups/create.camera') }}</label>
+            <label for="description" class="label">{{ __('setups/parts.camera') }}</label>
             <input type="text" name="camera" class="form-control {{ $errors->has('camera') ? 'is-danger' : '' }}" value="{{old ('camera') }}">
         </div>
         <div class="form-group">
-            <label for="description" class="label">{{ __('setups/create.vtx') }}</label>
+            <label for="description" class="label">{{ __('setups/parts.vtx') }}</label>
             <input type="text" name="vtx" class="form-control {{ $errors->has('vtx') ? 'is-danger' : '' }}" value="{{old ('vtx') }}">
         </div>
         <div class="form-group">
-            <label for="description" class="label">{{ __('setups/create.rx') }}</label>
+            <label for="description" class="label">{{ __('setups/parts.rx') }}</label>
             <input type="text" name="rx" class="form-control {{ $errors->has('rx') ? 'is-danger' : '' }}" value="{{old ('rx') }}">
         </div>
         <div class="form-group">
-            <label for="description" class="label">{{ __('setups/create.description') }}</label>
+            <label for="description" class="label">{{ __('setups/parts.description') }}</label>
             <input type="text" name="description" class="form-control {{ $errors->has('description') ? 'is-danger' : '' }}" value="{{old ('description') }}">
         </div>
 
