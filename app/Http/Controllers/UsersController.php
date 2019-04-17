@@ -91,7 +91,8 @@ class UsersController extends Controller
         }
         else {
             $setups = auth()->user()->setups;
-            return view('users.account', ['setups' => $setups]);
+            $addresses = auth()->user()->addresses;
+            return view('users.account', ['setups' => $setups, 'addresses' => $addresses]);
         }
     }
 }

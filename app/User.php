@@ -40,4 +40,8 @@ class User extends Authenticatable
     public function setups() {
         return $this->hasMany(Setup::class, 'owner_id');
     }
+
+    public function addresses() {
+        return $this->hasMany(Address::class, 'owner_id');
+    }
 }
